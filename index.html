@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lad12.1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid" id="top">
+        <a class="navbar-brand text-light" href="#">Carousel</a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-drak" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--carousel băng chuyền-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner text-light">
+        <div class="carousel-item active bg-img1">
+          <div class="container">
+            <div class="carousel text-start">
+              <div class="align">
+                <h1>Gojo</h1>
+                <p>
+                  Một trong những nhân vật anime nổi tiếng nhất nhật bản, anh là
+                  chú thuật sư mạnh nhất trong bộ phim chú thật sư hồi chiến
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary"
+                    >Nhấn vào đây để xem chi tiết</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-img2">
+          <div class="container">
+            <div class="carousel">
+              <div class="align">
+                <h1>Satoru</h1>
+                <p>
+                  một người anh trai với trái tim đầy tình thương ,sẳn sàng hi
+                  sinh tất cả để bảo vệ en gái khỏi cái chết
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary"
+                    >Nhấn vào đây để xem chi tiết</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+        </div>
+        <div class="carousel-item bg-img3">
+          <div class="container">
+            <div class="carousel">
+              <div class="align">
+                <h1>Nezuko</h1>
+                <p>
+                  Cô em gái của Satoru, một cô gái có ý chí đầy mạnh mẽ, mặc dù
+                  trở thành quỷ nhưng không mất đi ý thức
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary">
+                    Nhấn vào đây để hiểu rõ hơn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--footer-->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between">
+        <p>
+          &copy;2017-2021 Company,inc <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </p>
+        <div><a href="#top">Quay lại đầu trang</a></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

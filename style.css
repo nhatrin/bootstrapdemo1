@@ -1,0 +1,22 @@
+.bg-img1 {
+  background-image: url(./gojo1.jpg);
+  /* background-color: #000; */
+  background-size: cover;
+  height: 500px;
+}
+
+.bg-img2 {
+  background-image: url(./satoru.jpg);
+  background-size: cover;
+  height: 500px;
+}
+.bg-img3 {
+  background-image: url(./nezuko.jpg);
+  /* background-color: #000; */
+  background-size: cover;
+  height: 500px;
+}
+.align {
+  position: relative;
+  top: 200px;
+}
